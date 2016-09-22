@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddsm="http://ddsmprofile/1.0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://ddsmprofile/1.0 ddsm.profile.uml#_Q5OK8ICpEeaNZMlGOhBqbA">
+  <uml:Model xmi:id="_cguuwH_nEeaY1_B6ugQzhQ" name="storm-profiled-deployment-model" visibility="protected" URI="http://comptest/1.0">
+    <packagedElement xmi:type="uml:Model" xmi:id="_gMOfYIADEea8dPaO4P-bZQ" name="storm_deployment" URI="storm_deployment">
+      <packagedElement xmi:type="uml:Device" xmi:id="_xk5bYIADEea8dPaO4P-bZQ" name="vm1">
+        <nestedClassifier xmi:type="uml:Node" xmi:id="_4BV6YIADEea8dPaO4P-bZQ" name="storm1_nimbus1">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Mgeh8oANEea8dPaO4P-bZQ" name="zookeeper_server1" type="_DR6A8IAKEea8dPaO4P-bZQ" association="_Mgd64IANEea8dPaO4P-bZQ"/>
+          <deployment xmi:type="uml:Deployment" xmi:id="_Lz6eQIAKEea8dPaO4P-bZQ" name="execute_wikistats" client="_4BV6YIADEea8dPaO4P-bZQ" supplier="__gKNoIAJEea8dPaO4P-bZQ" deployedArtifact="__gKNoIAJEea8dPaO4P-bZQ"/>
+        </nestedClassifier>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Device" xmi:id="_2HxJoIADEea8dPaO4P-bZQ" name="vm2">
+        <nestedClassifier xmi:type="uml:Node" xmi:id="_6gVsYIADEea8dPaO4P-bZQ" name="storm1_worker2">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_vBgp4oAJEea8dPaO4P-bZQ" name="storm_nimbus1" type="_4BV6YIADEea8dPaO4P-bZQ" association="_vBfbwIAJEea8dPaO4P-bZQ"/>
+        </nestedClassifier>
+        <nestedNode xmi:type="uml:Node" xmi:id="_EdYVkIAKEea8dPaO4P-bZQ" name="zookeeper1_server2"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_sbPyQIAJEea8dPaO4P-bZQ" name="storm_worker1_to_nimbus" memberEnd="_sbRncIAJEea8dPaO4P-bZQ _sbRncYAJEea8dPaO4P-bZQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sbRAYIAJEea8dPaO4P-bZQ" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_sbRAYYAJEea8dPaO4P-bZQ" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_sbRncYAJEea8dPaO4P-bZQ" name="storm_worker1" type="_5qGA4IADEea8dPaO4P-bZQ" association="_sbPyQIAJEea8dPaO4P-bZQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_vBfbwIAJEea8dPaO4P-bZQ" name="storm_worker2_to_nimbus" memberEnd="_vBgp4oAJEea8dPaO4P-bZQ _vBgp44AJEea8dPaO4P-bZQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_vBgp4IAJEea8dPaO4P-bZQ" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_vBgp4YAJEea8dPaO4P-bZQ" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_vBgp44AJEea8dPaO4P-bZQ" name="storm_worker2" type="_6gVsYIADEea8dPaO4P-bZQ" association="_vBfbwIAJEea8dPaO4P-bZQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Artifact" xmi:id="__gKNoIAJEea8dPaO4P-bZQ" name="wikistats"/>
+      <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_FsMSEIAKEea8dPaO4P-bZQ" name="zookeeper_server_12" memberEnd="_FsM5IoAKEea8dPaO4P-bZQ _FsM5I4AKEea8dPaO4P-bZQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_FsM5IIAKEea8dPaO4P-bZQ" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_FsM5IYAKEea8dPaO4P-bZQ" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_FsM5I4AKEea8dPaO4P-bZQ" name="zookeeper_server1" type="_DR6A8IAKEea8dPaO4P-bZQ" association="_FsMSEIAKEea8dPaO4P-bZQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Device" xmi:id="_jQEcIIAJEea8dPaO4P-bZQ" name="vm3">
+        <nestedClassifier xmi:type="uml:Node" xmi:id="_5qGA4IADEea8dPaO4P-bZQ" name="storm1_worker1">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_sbRncIAJEea8dPaO4P-bZQ" name="storm_nimbus1" type="_4BV6YIADEea8dPaO4P-bZQ" association="_sbPyQIAJEea8dPaO4P-bZQ"/>
+        </nestedClassifier>
+        <nestedNode xmi:type="uml:Node" xmi:id="_DR6A8IAKEea8dPaO4P-bZQ" name="zookeeper1_server1">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_FsM5IoAKEea8dPaO4P-bZQ" name="zookeeper_server2" type="_EdYVkIAKEea8dPaO4P-bZQ" association="_FsMSEIAKEea8dPaO4P-bZQ"/>
+        </nestedNode>
+      </packagedElement>
+      <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_Mgd64IANEea8dPaO4P-bZQ" name="storm1_to_zookeeper1" memberEnd="_Mgeh8oANEea8dPaO4P-bZQ _MgfJAIANEea8dPaO4P-bZQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Mgeh8IANEea8dPaO4P-bZQ" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Mgeh8YANEea8dPaO4P-bZQ" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_MgfJAIANEea8dPaO4P-bZQ" name="storm_nimbus1" type="_4BV6YIADEea8dPaO4P-bZQ" association="_Mgd64IANEea8dPaO4P-bZQ"/>
+      </packagedElement>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_kssZ4IADEea8dPaO4P-bZQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SPZTsICpEeaNZMlGOhBqbA" source="PapyrusVersion">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_SPZTsYCpEeaNZMlGOhBqbA" key="Version" value="0.0.10"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_SPZTsoCpEeaNZMlGOhBqbA" key="Comment" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_SPZTs4CpEeaNZMlGOhBqbA" key="Copyright" value=""/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_SPZTtICpEeaNZMlGOhBqbA" key="Date" value="2016-09-22"/>
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_SPZTtYCpEeaNZMlGOhBqbA" key="Author" value=""/>
+        </eAnnotations>
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_kstA8IADEea8dPaO4P-bZQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="ddsm.profile.uml#_Q5OK8ICpEeaNZMlGOhBqbA"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="ddsm.profile.uml#_5wcycIABEea8dPaO4P-bZQ"/>
+      </profileApplication>
+    </packagedElement>
+  </uml:Model>
+  <ddsm:VM xmi:id="_05AQcIADEea8dPaO4P-bZQ" base_Device="_xk5bYIADEea8dPaO4P-bZQ"/>
+  <ddsm:VM xmi:id="_3VDcIIADEea8dPaO4P-bZQ" base_Device="_2HxJoIADEea8dPaO4P-bZQ"/>
+  <ddsm:StormNimbus xmi:id="_p-rpMIAJEea8dPaO4P-bZQ" base_Node="_4BV6YIADEea8dPaO4P-bZQ"/>
+  <ddsm:StormSupervisor xmi:id="_q1TvMIAJEea8dPaO4P-bZQ" base_Node="_6gVsYIADEea8dPaO4P-bZQ"/>
+  <ddsm:SlaveToMaster xmi:id="_5__wsIAJEea8dPaO4P-bZQ" base_CommunicationPath="_sbPyQIAJEea8dPaO4P-bZQ"/>
+  <ddsm:SlaveToMaster xmi:id="_642EQIAJEea8dPaO4P-bZQ" base_CommunicationPath="_vBfbwIAJEea8dPaO4P-bZQ"/>
+  <ddsm:BigDataJob xmi:id="_BJzsAIAKEea8dPaO4P-bZQ" base_Artifact="__gKNoIAJEea8dPaO4P-bZQ"/>
+  <ddsm:PeerToPeer xmi:id="_KI8xQIAKEea8dPaO4P-bZQ" base_CommunicationPath="_FsMSEIAKEea8dPaO4P-bZQ"/>
+  <ddsm:SubmitJob xmi:id="_TY2PUIAKEea8dPaO4P-bZQ" base_Deployment="_Lz6eQIAKEea8dPaO4P-bZQ"/>
+  <ddsm:ClusterToCluster xmi:id="_TUJOIIANEea8dPaO4P-bZQ" base_CommunicationPath="_Mgd64IANEea8dPaO4P-bZQ"/>
+  <ddsm:ZookeeperServer xmi:id="_ADHfkICgEeaZzu3h9Baz0g" base_Node="_EdYVkIAKEea8dPaO4P-bZQ"/>
+  <ddsm:ZookeeperServer xmi:id="_BleqMICgEeaZzu3h9Baz0g" base_Node="_DR6A8IAKEea8dPaO4P-bZQ"/>
+  <ddsm:ZookeeperServer xmi:id="_NW0KQICgEeaZzu3h9Baz0g" base_Node="_5qGA4IADEea8dPaO4P-bZQ"/>
+</xmi:XMI>
